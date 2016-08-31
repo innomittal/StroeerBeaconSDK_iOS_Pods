@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.xcconfig     = { 'OTHER_LDFLAGS' => '-lObjC' }
   s.frameworks   = 'Foundation', 'UIKit', 'CoreBluetooth', 'CoreGraphics', 'CoreLocation', 'CoreMotion', 'MobileCoreServices'
 
-  s.source     = { :git => "git@gitlab.match2blue.com:iOS/bluloc-stroeer-sdk.git", :tag => "v#{s.version}" }    
+  s.source     = { :git => "gitgit@github.com:StroeerSE/StroeerBeaconSDK_iOS.git", :tag => "v#{s.version}" }    
 
   s.vendored_frameworks  = 'StroeerProxity.framework'
   s.preserve_paths       = 'StroeerProxity.framework', 'StroeerProxitySDKDemo'
