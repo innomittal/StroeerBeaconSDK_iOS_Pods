@@ -21,14 +21,13 @@ Pod::Spec.new do |s|
   s.xcconfig     = { 'OTHER_LDFLAGS' => '-lObjC' }
   s.frameworks   = 'Foundation', 'UIKit', 'CoreBluetooth', 'CoreGraphics', 'CoreLocation', 'CoreMotion', 'MobileCoreServices', 'AdSupport'
 
-  s.source     = { :git => "git@github.com:StroeerSE/StroeerBeaconSDK_iOS.git", :tag => "v#{s.version}" }    
+  s.source     = { :git => "https://github.com/StroeerSE/StroeerBeaconSDK_iOS.git", :tag => "v#{s.version}" }    
 
   s.vendored_frameworks  = 'StroeerProxity.framework'
   s.preserve_paths       = 'StroeerProxity.framework', 'StroeerProxitySDKDemo'
   s.source_files 		 = 'StroeerProxity.framework/Versions/A/Headers/*.h'
   
-  s.dependency 'AFNetworking', '~> 3.1'
-  s.dependency 'Reachability', '~> 3.2'      
+  s.dependency 'AFNetworking', '~> 3.1'      
   s.dependency 'MQTTClient', '~> 0.9'
   s.dependency 'FMDB', '~> 2.7'  
   
